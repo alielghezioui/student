@@ -1,0 +1,22 @@
+package tp;
+
+public class class_student {
+    private String nom;
+    private String prenom;
+    private double note;
+
+    public class_student(String nom, String prenom, double note) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.note = note;
+    }
+
+    public void modifierNote(double nouvelleNote) {
+        this.note = nouvelleNote;
+    }
+
+    @Override
+    public String toString() {
+        return "Nom: " + nom + ", Prénom: " + prenom + ", Note: " + note;
+    }
+}
